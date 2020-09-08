@@ -4,13 +4,11 @@
 
 /* -----------> header */
 /*ハンバーガーメニュー↓―――――――――――*/
-header .navbar-brand {
-  font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho',
-    'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝',
-    'MS PMincho', serif;
+* {
+  box-sizing: border-box;
 }
-span {
-  background-color: #ffffff;
+header button span {
+  background-color: #fff;
   height: 3px;
   width: 16px;
   display: block;
@@ -19,87 +17,93 @@ span {
   margin: 2px 0 0 0;
 }
 
-span:nth-child(1) {
+header button span:nth-child(1) {
   top: 0px;
 }
-span:nth-child(2) {
+
+header button span:nth-child(2) {
   top: 10px;
 }
-span:nth-child(3) {
+
+header button span:nth-child(3) {
   top: 20px;
 }
 
 /*―――ハンバーガーメニュー↑――――――――*/
-.nav-link {
-  color: #fff;
-}
 
-.dropdown-menu {
+header .dropdown-menu {
   background-color: #000;
   color: #fff;
   background-color: black;
   border-radius: 0;
 }
-.dropdown-item {
+
+header .dropdown-item {
   color: #fff;
 }
-li.nav-item a.nav-link {
-  color: #fff;
-}
-header li a.nav-link {
-  color: #fff;
-}
-button span.navbar-toggler-icon {
-  color: #fff;
-}
-header a.navbar-brand,
-.lead:hover {
+
+header .nav-item .nav-link {
   color: #fff;
 }
 
 /*スマホの時*/
-
 @media screen and (max-width: 768px) {
   header {
     background-color: #000;
   }
-  header nav a.navbar-brand {
-    font-size: 25px;
+
+  header button {
+    margin: 10px 0;
   }
 
-  header nav ul a.dropdown-item {
+  header img {
+    width: 115px;
+  }
+
+  header .dropdown-item {
     font-size: 12px;
     padding: 15px;
   }
-  header nav ul a.dropdown-item:hover {
+
+  header .dropdown-item:hover {
     background-color: #000;
     color: #fff;
   }
 
-  header nav .nav-link {
+  header .nav-link {
     font-size: 13px;
     margin: 8px;
   }
+
+  header button {
+    position: relative;
+    left: 10px;
+  }
 }
+
 /*タブレットの時*/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   header {
     background-color: #000;
   }
 
-  header a.nav-link {
-    font-size: 13px;
-    position: relative;
-    left: 20px;
-    padding: 15px;
+  header img {
+    width: 150px;
+    padding: 10px 0;
+    margin-left: 3%;
   }
 
-  header nav ul li a.dropdown-item {
+  header .nav-link {
+    font-size: 13px;
+    padding: 15px 15px 15px 20px;
+    margin: 0 0 0 30px;
+  }
+
+  header .dropdown-item {
     float: left;
-    font-size: 12px;
+    font-size: 11px;
     padding: 15px;
-    position: relative;
-    left: 30px;
+    margin: 0 0 0 30px;
   }
 
   header button {
@@ -107,66 +111,63 @@ header a.navbar-brand,
     bottom: 3px;
   }
 
-  header a.dropdown-item:hover {
-    background-color: #000000;
+  header .dropdown-item:first-child {
+    margin-top: 3px;
+    padding-top: 0px;
   }
-  header nav a.navbar-brand {
-    font-size: 35px;
-    position: relative;
-    left: 23px;
-    bottom: 3px;
+
+  header .dropdown-item:hover {
+    background-color: #000;
+    color: #fff;
   }
 }
 /*パソコンの時*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
+  header {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
   header nav {
-    background-color: #777777;
     height: 90px;
   }
 
-  header nav a.navbar-brand {
-    font-size: 40px;
-    position: relative;
-    left: 150px;
-  }
-  .dropdown-item {
-    color: #fff;
-    font-size: 14px;
-  }
-  header div .dropdown {
-    font-size: 13px;
-    color: #000;
+  header {
+    min-width: 1250px;
   }
 
-  header div li.nav-item {
-    font-size: 15px;
+  header img {
+    width: 150px;
+    margin: 0 0px 0 10%;
   }
 
-  header div .dropdown-menu {
-    width: 230px;
-    padding: 0px;
-    position: relative;
-    top: 70px;
+  header .nav-item {
+    font-size: 90%;
+    margin-left: 4%;
   }
-  header a.dropdown-item {
-    padding: 15px;
-    font-size: 13px;
+
+  header.nav-item:last-child {
+    margin-right: 10%;
   }
-  header a.dropdown-item:hover {
-    background-color: #cc9999;
+
+  header ul {
+    margin-right: 20%;
+  }
+
+  header .dropdown-item {
+    padding: 7%;
+    font-size: 85%;
+  }
+
+  header .dropdown-item:hover {
+    background-color: #482404;
     color: #fff;
   }
-  header a.nav-link {
-    position: relative;
-    left: 380px;
-    margin: 10px;
-  }
+
   header .dropdown-menu {
+    width: 240%;
+    padding: 0;
     position: relative;
-    left: 380px;
-  }
-  header a.nav-link:hover {
-    color: #888888;
+    top: 160%;
   }
 }
 
