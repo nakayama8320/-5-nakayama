@@ -5,10 +5,6 @@
 /* -----------> header */
 /*ハンバーガーメニュー↓―――――――――――*/
 
-* {
-  box-sizing: border-box;
-}
-
 header button span {
   background-color: #fff;
   height: 3px;
@@ -38,6 +34,7 @@ header .dropdown-menu {
   color: #fff;
   background-color: #000;
   border-radius: 0;
+  padding-top: 0;
 }
 
 header .dropdown-item {
@@ -113,11 +110,6 @@ header .nav-item .nav-link {
     bottom: 3px;
   }
 
-  header .dropdown-item:first-child {
-    margin-top: 3px;
-    padding-top: 0;
-  }
-
   header .dropdown-item:hover {
     background-color: #000;
     color: #fff;
@@ -139,8 +131,12 @@ header .nav-item .nav-link {
     padding-left: 20px;
   }
 
-  header a.nav-link {
+  header .nav-link {
     text-align: center;
+  }
+
+  header .nav-link:hover {
+    color: #999;
   }
 
   header img {
@@ -151,7 +147,7 @@ header .nav-item .nav-link {
     font-size: 15px;
   }
 
-  header ul.navbar-nav {
+  header .navbar-nav {
     margin-left: auto;
   }
 
