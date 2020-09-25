@@ -34,7 +34,7 @@ header .dropdown-menu {
   color: #fff;
   background-color: #000;
   border-radius: 0;
-  padding-top: 0;
+  padding: 0;
 }
 
 header .dropdown-item {
@@ -99,7 +99,6 @@ header .nav-item .nav-link {
   }
 
   header .dropdown-item {
-    float: left;
     font-size: 11px;
     padding: 15px;
     margin: 0 0 0 30px;
@@ -165,7 +164,6 @@ header .nav-item .nav-link {
     width: 210px;
     position: relative;
     top: 60px;
-    padding: 0;
   }
 }
 
