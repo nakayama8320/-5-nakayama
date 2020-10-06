@@ -169,6 +169,144 @@ header .nav-item .nav-link {
 
 /* <----------- header */
 /* -----------> main */
+
+header {
+  position: relative;
+  z-index: 10;
+}
+
+main {
+  z-index: 5;
+  position: absolute;
+  top: 61.688px;
+  width: 100%;
+}
+
+main .top-wrapper {
+  display: flex;
+  writing-mode: vertical-rl;
+  align-items: center;
+  width: 100%;
+  background-image: url(https://d1f5hsy4d47upe.cloudfront.net/ac/aca22560122bea7a90d6bbb9175868a1_t.jpeg);
+  background-size: cover;
+  padding: 20% 0;
+  z-index: 5;
+}
+
+main span {
+  font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho',
+    'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝',
+    'MS PMincho', serif;
+  color: #fff;
+  white-space: nowrap;
+}
+
+main .top-text {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+main h2 {
+  font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho',
+    'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝',
+    'MS PMincho', serif;
+  display: block;
+  margin: 0 0 10px 0;
+  max-width: 1200px;
+  margin: auto;
+  width: 92.1875%;
+  line-height: 1.6;
+}
+
+main p {
+  font-family: 'Segoe UI', Verdana, '游ゴシック', YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo,
+    sans-serif;
+  font-size: 14px;
+  display: block;
+  max-width: 1200px;
+  margin: auto;
+  width: 92.1875%;
+}
+
+/*スマホのとき*/
+@media screen and (max-width: 768px) {
+  main .top-text {
+    padding: 32px 0 33px 0;
+    margin: 0 0 40px 0;
+  }
+
+  main h2 {
+    line-height: 1.5;
+    font-size: 20px;
+  }
+
+  main p {
+    line-height: 2;
+  }
+
+  main span {
+    font-size: 20px;
+  }
+}
+
+/*タブレットのとき*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  main .top-text {
+    padding: 51px 0 79px 0;
+    margin: 0 0 30px 0;
+  }
+
+  main h2 {
+    font-size: 36px;
+    line-height: 1.6;
+  }
+
+  main p {
+    line-height: 2.6;
+  }
+
+  main span {
+    font-size: 36px;
+  }
+}
+
+/*PCのとき*/
+@media screen and (min-width: 1200px) {
+  header {
+    position: relative;
+    z-index: 10;
+  }
+
+  main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  main .top-wrapper {
+    padding: 25% 0;
+  }
+
+  main .top-text {
+    padding: 51px 0 79px 0;
+    margin: 0 0 30px 0;
+  }
+
+  main h2 {
+    line-height: 1.6;
+  }
+
+  main p {
+    line-height: 2.6;
+  }
+
+  main span {
+    font-size: 36px;
+  }
+}
+
 /* <----------- main */
-/* ------------> footer
-/* <----------- footer */
+/* ------------> footer*/
+/* <----------- footer*/
