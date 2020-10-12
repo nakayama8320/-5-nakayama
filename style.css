@@ -171,15 +171,15 @@ header .nav-item .nav-link {
 /* -----------> main */
 
 header {
+  z-index: 2;
   position: relative;
-  z-index: 10;
 }
 
 main {
-  z-index: 5;
-  position: absolute;
-  top: 61.688px;
   width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 60px;
 }
 
 main .top-wrapper {
@@ -190,10 +190,10 @@ main .top-wrapper {
   background-image: url(https://d1f5hsy4d47upe.cloudfront.net/ac/aca22560122bea7a90d6bbb9175868a1_t.jpeg);
   background-size: cover;
   padding: 20% 0;
-  z-index: 5;
+  z-index: 1;
 }
 
-main span {
+main .top_intro {
   font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho',
     'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝',
     'MS PMincho', serif;
@@ -201,13 +201,13 @@ main span {
   white-space: nowrap;
 }
 
-main .top-text {
+main .top_text {
   background-color: #000;
   color: #fff;
   text-align: center;
 }
 
-main h2 {
+main .top_title {
   font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho',
     'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝',
     'MS PMincho', serif;
@@ -215,58 +215,62 @@ main h2 {
   margin: 0 0 10px 0;
   max-width: 1200px;
   margin: auto;
-  width: 92.1875%;
+  width: 92%;
   line-height: 1.6;
 }
 
-main p {
+main .top_text_center {
   font-family: 'Segoe UI', Verdana, '游ゴシック', YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo,
     sans-serif;
   font-size: 14px;
   display: block;
   max-width: 1200px;
   margin: auto;
-  width: 92.1875%;
+  width: 92%;
 }
+/*問題点
+・headerと画像の間に変な隙間がある。
+そこで，z-indexとかpositionあたりをもう一度見直す
+*/
 
 /*スマホのとき*/
 @media screen and (max-width: 768px) {
-  main .top-text {
+  main .top_text {
     padding: 32px 0 33px 0;
     margin: 0 0 40px 0;
   }
 
-  main h2 {
+  main .top_title {
     line-height: 1.5;
     font-size: 20px;
   }
 
-  main p {
+  main .top_text_center {
     line-height: 2;
   }
 
-  main span {
+  main .top_intro {
     font-size: 20px;
   }
 }
 
 /*タブレットのとき*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  main .top-text {
+  main .top_text {
     padding: 51px 0 79px 0;
     margin: 0 0 30px 0;
   }
 
-  main h2 {
+  main .top_title {
     font-size: 36px;
     line-height: 1.6;
   }
 
-  main p {
+  main .top_text_center {
     line-height: 2.6;
   }
 
-  main span {
+  main .top_intro {
     font-size: 36px;
   }
 }
@@ -275,7 +279,7 @@ main p {
 @media screen and (min-width: 1200px) {
   header {
     position: relative;
-    z-index: 10;
+    z-index: 2;
   }
 
   main {
@@ -283,30 +287,32 @@ main p {
     top: 0;
     right: 0;
     bottom: 0;
+    z-index: 1;
   }
 
   main .top-wrapper {
     padding: 25% 0;
   }
 
-  main .top-text {
+  main .top_text {
     padding: 51px 0 79px 0;
     margin: 0 0 30px 0;
   }
 
-  main h2 {
+  main .top_title {
     line-height: 1.6;
   }
 
-  main p {
+  main .top_text_center {
     line-height: 2.6;
   }
 
-  main span {
+  main .top_intro {
     font-size: 36px;
   }
 }
 
+/*<-------------人と人，本と人がつながる*/
 /* <----------- main */
 /* ------------> footer*/
 /* <----------- footer*/
