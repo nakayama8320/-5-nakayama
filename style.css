@@ -171,15 +171,8 @@ header .nav-item .nav-link {
 /* -----------> main */
 
 header {
-  z-index: 2;
-  position: relative;
-}
-
-main.primary {
-  width: 100%;
-  z-index: 1;
   position: absolute;
-  top: 60px;
+  width: 100%;
 }
 
 main .top-wrapper {
@@ -190,7 +183,6 @@ main .top-wrapper {
   background-image: url(https://d1f5hsy4d47upe.cloudfront.net/ac/aca22560122bea7a90d6bbb9175868a1_t.jpeg);
   background-size: cover;
   padding: 20% 0;
-  z-index: 1;
 }
 
 main .top_intro {
@@ -273,19 +265,6 @@ main .top_text_center {
 
 /*PCのとき*/
 @media screen and (min-width: 1200px) {
-  header {
-    position: relative;
-    z-index: 2;
-  }
-
-  main.primary {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-  }
-
   main .top-wrapper {
     padding: 25% 0;
   }
@@ -308,7 +287,6 @@ main .top_text_center {
   }
 }
 
-/*<-------------人と人，本と人がつながる*/
 /* <----------- main */
 /* ------------> footer*/
-/* <----------- footer*/
+/* <----------- footer */
