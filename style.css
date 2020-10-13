@@ -175,7 +175,7 @@ header {
   position: relative;
 }
 
-main {
+main.primary {
   width: 100%;
   z-index: 1;
   position: absolute;
@@ -228,10 +228,6 @@ main .top_text_center {
   margin: auto;
   width: 92%;
 }
-/*問題点
-・headerと画像の間に変な隙間がある。
-そこで，z-indexとかpositionあたりをもう一度見直す
-*/
 
 /*スマホのとき*/
 @media screen and (max-width: 768px) {
@@ -282,7 +278,7 @@ main .top_text_center {
     z-index: 2;
   }
 
-  main {
+  main.primary {
     position: absolute;
     top: 0;
     right: 0;
