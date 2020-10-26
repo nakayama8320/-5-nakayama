@@ -3,8 +3,8 @@
 /* <----------- common */
 
 /* -----------> header */
-/*ハンバーガーメニュー↓―――――――――――*/
 
+/*ハンバーガーメニュー↓―――――――――――*/
 header button span {
   background-color: #fff;
   height: 3px;
@@ -26,7 +26,6 @@ header button span:nth-child(2) {
 header button span:nth-child(3) {
   top: 20px;
 }
-
 /*―――ハンバーガーメニュー↑――――――――*/
 
 header .dropdown-menu {
@@ -81,7 +80,7 @@ header .nav-item .nav-link {
 }
 
 /*タブレットの時*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   header {
     background-color: #000;
   }
@@ -114,6 +113,7 @@ header .nav-item .nav-link {
     color: #fff;
   }
 }
+
 /*パソコンの時*/
 @media screen and (min-width: 1200px) {
   header {
@@ -132,6 +132,7 @@ header .nav-item .nav-link {
 
   header .nav-link {
     text-align: center;
+    font-size: 14px;
   }
 
   header .nav-link:hover {
@@ -140,10 +141,13 @@ header .nav-item .nav-link {
 
   header img {
     width: 155px;
+    padding: 0;
+    margin: 0;
   }
 
   header .nav-item {
-    font-size: 15px;
+    margin: 0;
+    padding: 0;
   }
 
   header .navbar-nav {
@@ -153,6 +157,7 @@ header .nav-item .nav-link {
   header .dropdown-item {
     padding: 15px;
     font-size: 13px;
+    margin: 0;
   }
 
   header .dropdown-item:hover {
@@ -163,12 +168,161 @@ header .nav-item .nav-link {
   header .dropdown-menu {
     width: 210px;
     position: relative;
-    top: 60px;
+    top: 68px;
+    left: 10px;
   }
 }
 
 /* <----------- header */
 /* -----------> main */
+
+header {
+  position: absolute;
+  width: 100%;
+}
+
+main.primary {
+  width: 100%;
+}
+
+main .top-wrapper {
+  display: flex;
+  writing-mode: vertical-rl;
+  align-items: center;
+  background-image: url(https://d1f5hsy4d47upe.cloudfront.net/ac/aca22560122bea7a90d6bbb9175868a1_t.jpeg);
+  background-size: cover;
+  width: 100%;
+}
+
+main .top_intro {
+  font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho',
+    'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝',
+    'MS PMincho', serif;
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+  line-height: 1.3;
+  display: flex;
+}
+
+main .top_text {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+main .top_title {
+  font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho',
+    'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝',
+    'MS PMincho', serif;
+  display: block;
+  margin: 0 0 10px 0;
+  max-width: 1200px;
+  margin: auto;
+  width: 92%;
+  line-height: 1.6;
+}
+
+main .top_text_center {
+  font-family: 'Segoe UI', Verdana, '游ゴシック', YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo,
+    sans-serif;
+  font-size: 14px;
+  display: block;
+  max-width: 1200px;
+  margin: auto;
+  width: 92%;
+}
+
+/*スマホのとき*/
+@media screen and (max-width: 768px) {
+  header {
+    position: absolute;
+  }
+
+  main .top_text {
+    padding: 32px 0 33px 0;
+    margin: 0 0 40px 0;
+  }
+
+  main .top-wrapper {
+    height: 450px;
+  }
+
+  main .top_title {
+    line-height: 1.5;
+    font-size: 20px;
+  }
+
+  main .top_text_center {
+    line-height: 2;
+  }
+
+  main .top_intro {
+    font-size: 20px;
+    padding-top: 170px;
+    display: block;
+  }
+}
+
+/*タブレットのとき*/
+@media screen and (min-width: 768px) {
+  header {
+    position: absolute;
+  }
+
+  main .top_text {
+    padding: 51px 0 79px 0;
+    margin: 0 0 30px 0;
+  }
+
+  main .top-wrapper {
+    height: 0;
+    /*表示画像の高さ÷表示画像の幅×100=66.66…より*/
+    padding: 33.33% 0;
+  }
+
+  main .top_title {
+    font-size: 36px;
+    line-height: 1.6;
+  }
+
+  main .top_text_center {
+    line-height: 2.6;
+  }
+
+  main .top_intro {
+    font-size: 36px;
+    margin-top: -100px;
+  }
+}
+
+/*PCのとき*/
+@media screen and (min-width: 1200px) {
+  main .top_text {
+    padding: 51px 0 79px 0;
+    margin: 0 0 30px 0;
+  }
+
+  main .top_title {
+    line-height: 1.6;
+    font-size: 36px;
+  }
+
+  main .top-wrapper {
+    height: 0;
+    /*表示画像の高さ÷表示画像の幅×100=66.66…より*/
+    padding: 33.33% 0;
+  }
+
+  main .top_text_center {
+    line-height: 2.6;
+  }
+
+  main .top_intro {
+    font-size: 36px;
+    margin-top: -100px;
+  }
+}
 /* <----------- main */
-/* ------------> footer
+/* ------------> footer*/
 /* <----------- footer */
