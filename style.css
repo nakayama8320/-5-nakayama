@@ -94,13 +94,13 @@ header .nav-item .nav-link {
   header .nav-link {
     font-size: 13px;
     padding: 15px 15px 15px 20px;
-    margin: 0 0 0 30px;
+    margin-left: 30px;
   }
 
   header .dropdown-item {
     font-size: 11px;
     padding: 15px;
-    margin: 0 0 0 30px;
+    margin-left: 30px;
   }
 
   header button {
@@ -194,7 +194,7 @@ main .top-wrapper {
   width: 100%;
 }
 
-main .top_intro {
+main .top-intro {
   font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho',
     'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝',
     'MS PMincho', serif;
@@ -205,25 +205,23 @@ main .top_intro {
   display: flex;
 }
 
-main .top_text {
+main .top-text {
   background-color: #000;
   color: #fff;
   text-align: center;
 }
 
-main .top_title {
+main .top-title {
   font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho',
     'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝',
     'MS PMincho', serif;
   display: block;
-  margin: 0 0 10px 0;
   max-width: 1200px;
   margin: auto;
   width: 92%;
-  line-height: 1.6;
 }
 
-main .top_text_center {
+main .top-content {
   font-family: 'Segoe UI', Verdana, '游ゴシック', YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo,
     sans-serif;
   font-size: 14px;
@@ -235,29 +233,25 @@ main .top_text_center {
 
 /*スマホのとき*/
 @media screen and (max-width: 768px) {
-  header {
-    position: absolute;
-  }
-
-  main .top_text {
-    padding: 32px 0 33px 0;
-    margin: 0 0 40px 0;
+  main .top-text {
+    padding: 32px 0 33px;
+    margin-bottom: 40px;
   }
 
   main .top-wrapper {
     height: 450px;
   }
 
-  main .top_title {
+  main .top-title {
     line-height: 1.5;
     font-size: 20px;
   }
 
-  main .top_text_center {
+  main .top-content {
     line-height: 2;
   }
 
-  main .top_intro {
+  main .top-intro {
     font-size: 20px;
     padding-top: 170px;
     display: block;
@@ -266,13 +260,9 @@ main .top_text_center {
 
 /*タブレットのとき*/
 @media screen and (min-width: 768px) {
-  header {
-    position: absolute;
-  }
-
-  main .top_text {
-    padding: 51px 0 79px 0;
-    margin: 0 0 30px 0;
+  main .top-text {
+    padding: 51px 0 79px;
+    margin-bottom: 30px;
   }
 
   main .top-wrapper {
@@ -281,16 +271,16 @@ main .top_text_center {
     padding: 33.33% 0;
   }
 
-  main .top_title {
+  main .top-title {
     font-size: 36px;
     line-height: 1.6;
   }
 
-  main .top_text_center {
+  main .top-content {
     line-height: 2.6;
   }
 
-  main .top_intro {
+  main .top-intro {
     font-size: 36px;
     margin-top: -100px;
   }
@@ -298,12 +288,12 @@ main .top_text_center {
 
 /*PCのとき*/
 @media screen and (min-width: 1200px) {
-  main .top_text {
-    padding: 51px 0 79px 0;
-    margin: 0 0 30px 0;
+  main .top-text {
+    padding: 51px 0 79px;
+    margin-bottom: 30px;
   }
 
-  main .top_title {
+  main .top-title {
     line-height: 1.6;
     font-size: 36px;
   }
@@ -314,11 +304,11 @@ main .top_text_center {
     padding: 33.33% 0;
   }
 
-  main .top_text_center {
+  main .top-content {
     line-height: 2.6;
   }
 
-  main .top_intro {
+  main .top-intro {
     font-size: 36px;
     margin-top: -100px;
   }
