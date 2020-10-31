@@ -188,10 +188,12 @@ main.primary {
 main .top-wrapper {
   display: flex;
   writing-mode: vertical-rl;
-  align-items: center;
   background-image: url(https://d1f5hsy4d47upe.cloudfront.net/ac/aca22560122bea7a90d6bbb9175868a1_t.jpeg);
   background-size: cover;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main .top-intro {
@@ -230,7 +232,6 @@ main .top-content {
   margin: auto;
   width: 92%;
 }
-
 /*スマホのとき*/
 @media screen and (max-width: 768px) {
   main .top-text {
@@ -253,8 +254,6 @@ main .top-content {
 
   main .top-intro {
     font-size: 20px;
-    padding-top: 170px;
-    display: block;
   }
 }
 
@@ -266,9 +265,7 @@ main .top-content {
   }
 
   main .top-wrapper {
-    height: 0;
-    /*表示画像の高さ÷表示画像の幅×100=66.66…より*/
-    padding: 33.33% 0;
+    height: 66vw;
   }
 
   main .top-title {
@@ -282,7 +279,6 @@ main .top-content {
 
   main .top-intro {
     font-size: 36px;
-    margin-top: -100px;
   }
 }
 
@@ -299,9 +295,7 @@ main .top-content {
   }
 
   main .top-wrapper {
-    height: 0;
-    /*表示画像の高さ÷表示画像の幅×100=66.66…より*/
-    padding: 33.33% 0;
+    height: 66vw;
   }
 
   main .top-content {
@@ -310,7 +304,6 @@ main .top-content {
 
   main .top-intro {
     font-size: 36px;
-    margin-top: -100px;
   }
 }
 /* <----------- main */
