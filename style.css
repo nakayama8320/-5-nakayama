@@ -186,7 +186,6 @@ main.primary {
 }
 
 main .top-wrapper {
-  display: flex;
   writing-mode: vertical-rl;
   background-image: url(https://d1f5hsy4d47upe.cloudfront.net/ac/aca22560122bea7a90d6bbb9175868a1_t.jpeg);
   background-size: cover;
