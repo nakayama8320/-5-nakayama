@@ -305,6 +305,97 @@ main .top-content {
     font-size: 36px;
   }
 }
+/*------------>人と人，本と人がつながる*/
+
+main.primary {
+  width: 100%;
+}
+
+main .secondary-section {
+  background-color: #f5f5f5;
+  text-align: center;
+  color: #000;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 100px;
+  padding: 51px 20px 49px;
+}
+
+main .secondary-section-title {
+  font-weight: 500;
+  color: #442606;
+  font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho',
+    'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝',
+    'MS PMincho', serif;
+  line-height: 1.5;
+  font-size: 36px;
+}
+
+main .secondary-section-content {
+  font-family: 'Segoe UI', Verdana, '游ゴシック', YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo,
+    sans-serif;
+  margin: 0;
+  font-size: 14px;
+  line-height: 2.6;
+}
+
+main .contents-item {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 90%;
+}
+
+main .contents-item-image {
+  width: 25%;
+}
+
+/*スマホのとき*/
+@media screen and (max-width: 767px) {
+  main .secondary-section-title {
+    font-size: 20px;
+  }
+
+  main .contents-item {
+    padding: 0;
+  }
+
+  main .secondary-section {
+    padding: 36px 25px 33px;
+    margin-bottom: 40px;
+  }
+
+  main .secondary-section-content {
+    line-height: 2;
+  }
+
+  main .contents-item-image {
+    width: 50%;
+  }
+}
+
+/*タブレットのとき*/
+@media screen and (min-width: 767px) and(max-width:1199px) {
+  main .secondary-section-title {
+    line-height: 1.5;
+  }
+
+  main .secondary-section {
+    padding: 36px 25px 33px;
+  }
+
+  main .secondary-section-content {
+    line-height: 2.6;
+  }
+}
+
+/*PCのとき*/
+@media screen and(min-width: 1200px) {
+  main .secondary-section-content {
+    line-height: 2.6;
+  }
+}
+/*<-------------人と人，本と人がつながる*/
 /* <----------- main */
 /* ------------> footer*/
 /* <----------- footer */
