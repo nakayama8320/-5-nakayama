@@ -346,6 +346,7 @@ main .contents-item-image {
 @media screen and (max-width: 767px) {
   .human {
     padding-top: 0;
+    margin-bottom: 40px;
   }
 
   main .secondary-section-title {
@@ -354,7 +355,6 @@ main .contents-item-image {
 
   main .secondary-section {
     padding: 35px 25px;
-    margin-bottom: 40px;
   }
 
   main .secondary-section-content {
