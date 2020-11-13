@@ -313,10 +313,6 @@ main .top-content {
   padding-top: 100px;
 }
 
-main.primary {
-  width: 100%;
-}
-
 main .secondary-section {
   background-color: #f5f5f5;
   text-align: center;
@@ -357,7 +353,7 @@ main .contents-item-image {
   }
 
   main .secondary-section {
-    padding: 35px 25px 35px;
+    padding: 35px 25px;
     margin-bottom: 40px;
   }
 
@@ -377,7 +373,7 @@ main .contents-item-image {
   }
 
   main .secondary-section {
-    padding: 35px 25px 35px;
+    padding: 35px 25px;
   }
 
   main .secondary-section-content {
@@ -392,6 +388,7 @@ main .contents-item-image {
   }
 }
 /*<-------------人と人，本と人がつながる*/
+
 /* <----------- main */
 /* ------------> footer*/
 /* <----------- footer */
