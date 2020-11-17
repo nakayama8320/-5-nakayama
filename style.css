@@ -225,6 +225,29 @@ main .top-content {
   margin: auto;
   width: 92%;
 }
+
+.content-wrapper {
+  display: block;
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto 100px;
+}
+
+.content-title {
+  font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho',
+    'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝',
+    'MS PMincho', serif;
+  line-height: 1.6;
+  font-size: 36px;
+}
+
+.content-text {
+  font-family: 'Segoe UI', Verdana, '游ゴシック', YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo,
+    sans-serif;
+  font-size: 14px;
+  line-height: 2.6;
+}
+
 /*スマホのとき*/
 @media screen and (max-width: 768px) {
   main .top-text {
@@ -237,6 +260,19 @@ main .top-content {
   }
 
   main .top-intro {
+    font-size: 20px;
+  }
+
+  .content-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .content-text {
+    line-height: 2;
+  }
+
+  .content-title {
+    line-height: 1.5;
     font-size: 20px;
   }
 }
@@ -272,43 +308,6 @@ main .top-content {
     font-size: 36px;
   }
 }
-/*----------------後で場所を移動させる。--------------*/
-.content-wrapper {
-  width: 92%;
-  max-width: 1200px;
-  margin: 0 auto 100px;
-}
-@media screen and (max-width: 767px) {
-  .content-wrapper {
-    margin-bottom: 40px;
-  }
-}
-.content-text {
-  font-family: 'Segoe UI', Verdana, '游ゴシック', YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo,
-    sans-serif;
-  font-size: 14px;
-  line-height: 2.6;
-}
-
-.content-title {
-  font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho',
-    'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝',
-    'MS PMincho', serif;
-  line-height: 1.6;
-  font-size: 36px;
-}
-/*スマホのとき*/
-@media screen and (max-width: 767px) {
-  .content-text {
-    line-height: 2;
-  }
-
-  .content-title {
-    line-height: 1.5;
-    font-size: 20px;
-  }
-}
-/*後で移動させる--------------*/
 
 /*------------>人と人，本と人がつながる*/
 .human {
