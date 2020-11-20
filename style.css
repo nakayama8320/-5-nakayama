@@ -310,54 +310,52 @@ main .top-content {
 }
 
 /*------------>人と人，本と人がつながる*/
-.human {
+#human {
   padding-top: 100px;
 }
 
-main .secondary-section {
+#human .secondary-section {
   background-color: #f5f5f5;
   text-align: center;
   color: #000;
   padding: 50px 20px;
 }
 
-main .secondary-section-title {
+#human .secondary-section-title {
   font-weight: 500;
   color: #442606;
 }
 
-main .secondary-section-content {
+#human .secondary-section-content {
   margin: 0;
 }
 
-main .contents-item-image {
+#human .contents-item-image {
   width: 25%;
 }
 
 /*スマホのとき*/
 @media screen and (max-width: 767px) {
-  .human {
+  #human {
     padding-top: 0;
   }
 
-  main .secondary-section {
+  #human .secondary-section {
     padding: 35px 25px;
   }
 
-  main .contents-item-image {
+  #human .contents-item-image {
     width: 50%;
   }
 }
 
 /*タブレットのとき*/
 @media screen and (min-width: 767px) and(max-width:1199px) {
-  main .secondary-section {
+  #human .secondary-section {
     padding: 35px 25px;
   }
 }
-
 /*<-------------人と人，本と人がつながる*/
-
 /* <----------- main */
 /* ------------> footer*/
 /* <----------- footer */
