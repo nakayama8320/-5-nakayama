@@ -209,20 +209,17 @@ main .top-intro {
 main .top-text {
   background-color: #000;
   color: #fff;
-  text-align: center;
 }
 
 main .top-title {
   display: block;
   max-width: 1200px;
-  margin: auto;
   width: 92%;
 }
 
 main .top-content {
   display: block;
   max-width: 1200px;
-  margin: auto;
   width: 92%;
 }
 
@@ -316,7 +313,6 @@ main .top-content {
 
 #human .secondary-section {
   background-color: #f5f5f5;
-  text-align: center;
   color: #000;
   padding: 50px 20px;
 }
@@ -353,11 +349,6 @@ main .top-content {
 }
 /*<-------------人と人，本と人がつながる*/
 /*カードを作る-------------->*/
-
-/*やること
-content-wrapper、content-itemのあたりはスタイルを自作するのが時間の無駄。bootstrap使えばすぐ終わるしミスが少ない。bootstrapのgridシステムのところ（cssのgridではない）もう一度よく読んでおくべき
-*/
-
 #make-card .card {
   border-radius: 0;
   border-color: #fff;
@@ -404,7 +395,6 @@ content-wrapper、content-itemのあたりはスタイルを自作するのが�
 
 #make-card .button {
   display: inline-block;
-  text-align: center;
   color: #fff;
   background-color: #000;
   font-size: 14px;
@@ -414,10 +404,6 @@ content-wrapper、content-itemのあたりはスタイルを自作するのが�
   line-height: 55px;
   padding: 0 15px;
   width: 150px;
-}
-
-#make-card .center {
-  text-align: center;
 }
 
 #make-card .button:hover {
@@ -485,7 +471,6 @@ content-wrapper、content-itemのあたりはスタイルを自作するのが�
     width: 200px;
   }
 }
-
 /*------------>カードを作る*/
 /* <----------- main */
 /* ------------> footer*/
