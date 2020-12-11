@@ -359,7 +359,6 @@ main .top-content {
 #make-card .card-body {
   background-color: #f5f5f5;
   padding: 30px 30px 40px 30px;
-  position: relative;
 }
 
 #make-card .card-img-top {
@@ -472,6 +471,8 @@ main .top-content {
   }
 }
 /*------------>カードを作る*/
+/*---------------------------------*/
+
 /* <----------- main */
 /* ------------> footer*/
 /* <----------- footer */
