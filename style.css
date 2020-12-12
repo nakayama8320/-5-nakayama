@@ -350,19 +350,14 @@ main .top-content {
 /*<-------------人と人，本と人がつながる*/
 /*カードを作る-------------->*/
 #make-card .card {
-  border-radius: 0;
-  border-color: #fff;
   position: relative;
   z-index: 1;
+  border: 0;
 }
 
 #make-card .card-body {
   background-color: #f5f5f5;
   padding: 30px 30px 40px 30px;
-}
-
-#make-card .card-img-top {
-  border-radius: 0;
 }
 
 #make-card .card-text {
@@ -371,11 +366,10 @@ main .top-content {
 
 #make-card .p-triangle {
   position: absolute;
-  left: 5px;
+  left: 15px;
   overflow: hidden;
   width: 160px;
   height: 160px;
-  padding-left: 20px;
   font-weight: 700;
   margin: 0;
   font-size: 20px;
