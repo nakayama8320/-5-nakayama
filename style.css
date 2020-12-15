@@ -44,135 +44,6 @@ header .nav-item .nav-link {
   color: #fff;
 }
 
-/*スマホの時*/
-@media screen and (max-width: 768px) {
-  header {
-    background-color: #000;
-  }
-
-  header button {
-    margin: 10px 0;
-  }
-
-  header img {
-    width: 115px;
-  }
-
-  header .dropdown-item {
-    font-size: 12px;
-    padding: 15px;
-  }
-
-  header .dropdown-item:hover {
-    background-color: #000;
-    color: #fff;
-  }
-
-  header .nav-link {
-    font-size: 13px;
-    margin: 8px;
-  }
-
-  header button {
-    position: relative;
-    left: 10px;
-  }
-}
-
-/*タブレットの時*/
-@media screen and (min-width: 768px) {
-  header {
-    background-color: #000;
-  }
-
-  header img {
-    width: 150px;
-    padding: 10px 0;
-    margin-left: 3%;
-  }
-
-  header .nav-link {
-    font-size: 13px;
-    padding: 15px 15px 15px 20px;
-    margin-left: 30px;
-  }
-
-  header .dropdown-item {
-    font-size: 11px;
-    padding: 15px;
-    margin-left: 30px;
-  }
-
-  header button {
-    position: relative;
-    bottom: 3px;
-  }
-
-  header .dropdown-item:hover {
-    background-color: #000;
-    color: #fff;
-  }
-}
-
-/*パソコンの時*/
-@media screen and (min-width: 1200px) {
-  header {
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  header nav {
-    height: 90px;
-    max-width: 1200px;
-    margin: auto;
-  }
-
-  header li {
-    padding-left: 20px;
-  }
-
-  header .nav-link {
-    text-align: center;
-    font-size: 14px;
-  }
-
-  header .nav-link:hover {
-    color: #999;
-  }
-
-  header img {
-    width: 155px;
-    padding: 0;
-    margin: 0;
-  }
-
-  header .nav-item {
-    margin: 0;
-    padding: 0;
-  }
-
-  header .navbar-nav {
-    margin-left: auto;
-  }
-
-  header .dropdown-item {
-    padding: 15px;
-    font-size: 13px;
-    margin: 0;
-  }
-
-  header .dropdown-item:hover {
-    background-color: #482404;
-    color: #fff;
-  }
-
-  header .dropdown-menu {
-    width: 210px;
-    position: relative;
-    top: 68px;
-    left: 10px;
-  }
-}
-
 /* <----------- header */
 /* -----------> main */
 
@@ -245,67 +116,6 @@ main .top-content {
   line-height: 2.6;
 }
 
-/*スマホのとき*/
-@media screen and (max-width: 768px) {
-  main .top-text {
-    padding: 32px 0 33px;
-    margin-bottom: 40px;
-  }
-
-  main .top-wrapper {
-    height: 450px;
-  }
-
-  main .top-intro {
-    font-size: 20px;
-  }
-
-  .content-wrapper {
-    margin-bottom: 40px;
-  }
-
-  .content-text {
-    line-height: 2;
-  }
-
-  .content-title {
-    line-height: 1.5;
-    font-size: 20px;
-  }
-}
-
-/*タブレットのとき*/
-@media screen and (min-width: 768px) {
-  main .top-text {
-    padding: 51px 0 79px;
-    margin-bottom: 30px;
-  }
-
-  main .top-wrapper {
-    height: 66vw;
-  }
-
-  main .top-intro {
-    font-size: 36px;
-  }
-}
-
-/*PCのとき*/
-@media screen and (min-width: 1200px) {
-  main .top-text {
-    padding: 51px 0 79px;
-    margin-bottom: 30px;
-  }
-
-  main .top-wrapper {
-    height: 66vw;
-  }
-
-  main .top-intro {
-    font-size: 36px;
-  }
-}
-
 /*------------>人と人，本と人がつながる*/
 #human {
   padding-top: 100px;
@@ -314,7 +124,7 @@ main .top-content {
 #human .secondary-section {
   background-color: #f5f5f5;
   color: #000;
-  padding: 50px 20px;
+
 }
 
 #human .secondary-section-title {
@@ -330,23 +140,6 @@ main .top-content {
   width: 25%;
 }
 
-/*スマホのとき*/
-@media screen and (max-width: 767px) {
-  #human {
-    padding-top: 0;
-  }
-
-  #human .contents-item-image {
-    width: 50%;
-  }
-}
-
-/*タブレットのとき*/
-@media screen and (max-width: 1199px) {
-  #human .secondary-section {
-    padding: 35px 25px;
-  }
-}
 /*<-------------人と人，本と人がつながる*/
 /*カードを作る-------------->*/
 #make-card .card {
@@ -404,9 +197,85 @@ main .top-content {
   text-decoration: none;
   background-color: #442602;
 }
+/*------------>カードを作る*/
+/* <----------- main */
+/* ------------> footer*/
+/* <----------- footer */
+
+/*メディアクエリ------------------>*/
 
 /*スマホのとき*/
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 768px) {
+  header {
+    background-color: #000;
+  }
+
+  header button {
+    margin: 10px 0;
+  }
+
+  header img {
+    width: 115px;
+  }
+
+  header .dropdown-item {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  header .dropdown-item:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  header .nav-link {
+    font-size: 13px;
+    margin: 8px;
+  }
+
+  header button {
+    position: relative;
+    left: 10px;
+  }
+
+  main .top-text {
+    padding: 32px 0 33px;
+    margin-bottom: 40px;
+  }
+
+  main .top-wrapper {
+    height: 450px;
+  }
+
+  main .top-intro {
+    font-size: 20px;
+  }
+
+  .content-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .content-text {
+    line-height: 2;
+  }
+
+  .content-title {
+    line-height: 1.5;
+    font-size: 20px;
+  }
+
+  #human {
+    padding-top: 0;
+  }
+
+  #human .contents-item-image {
+    width: 50%;
+  }
+
+  #human .secondary-section {
+    padding: 35px 25px;
+  }
+
   #make-card .tertiary {
     margin-bottom: 40px;
   }
@@ -437,7 +306,56 @@ main .top-content {
 }
 
 /*タブレットのとき*/
-@media screen and(min-width:767px) {
+@media screen and (min-width: 768px) {
+  header {
+    background-color: #000;
+  }
+
+  header img {
+    width: 150px;
+    padding: 10px 0;
+    margin-left: 3%;
+  }
+
+  header .nav-link {
+    font-size: 13px;
+    padding: 15px 15px 15px 20px;
+    margin-left: 30px;
+  }
+
+  header .dropdown-item {
+    font-size: 11px;
+    padding: 15px;
+    margin-left: 30px;
+  }
+
+  header button {
+    position: relative;
+    bottom: 3px;
+  }
+
+  header .dropdown-item:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  main .top-text {
+    padding: 51px 0 79px;
+    margin-bottom: 30px;
+  }
+
+  main .top-wrapper {
+    height: 66vw;
+  }
+
+  main .top-intro {
+    font-size: 36px;
+  }
+
+  #human .secondary-section {
+    padding: 35px 25px;
+  }
+
   #make-card .p-triangle {
     font-size: 20px;
   }
@@ -446,27 +364,90 @@ main .top-content {
     margin-bottom: 30px;
   }
 
-  #make-card .card {
-    padding: 0 5px;
-  }
-
   #make-card .button {
     width: 150px;
   }
 }
 
 @media screen and(min-width:1120px) {
-  #make-card .card-wrapper .card {
-    padding: 0 5px;
-  }
-
   #make-card .button {
     width: 200px;
   }
 }
-/*------------>カードを作る*/
-/*---------------------------------*/
 
-/* <----------- main */
-/* ------------> footer*/
-/* <----------- footer */
+/*PCのとき*/
+@media screen and (min-width: 1200px) {
+  header {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  header nav {
+    height: 90px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  header li {
+    padding-left: 20px;
+  }
+
+  header .nav-link {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  header .nav-link:hover {
+    color: #999;
+  }
+
+  header img {
+    width: 155px;
+    padding: 0;
+    margin: 0;
+  }
+
+  header .nav-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  header .navbar-nav {
+    margin-left: auto;
+  }
+
+  header .dropdown-item {
+    padding: 15px;
+    font-size: 13px;
+    margin: 0;
+  }
+
+  header .dropdown-item:hover {
+    background-color: #482404;
+    color: #fff;
+  }
+
+  header .dropdown-menu {
+    width: 210px;
+    position: relative;
+    top: 68px;
+    left: 10px;
+  }
+
+  main .top-text {
+    padding: 51px 0 79px;
+    margin-bottom: 30px;
+  }
+
+  main .top-wrapper {
+    height: 66vw;
+  }
+
+  main .top-intro {
+    font-size: 36px;
+  }
+
+  #human .secondary-section{
+    padding: 50px 20px;
+  }
+}
+/*------------------>メディアクエリ*/
